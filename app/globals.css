@@ -12,6 +12,10 @@ html {
   background-color: #101114;
 }
 
+body {
+  color: #fff;
+}
+
 @layer utilities {
   .input-class {
     @apply text-16 placeholder:text-16 bg-black-1 rounded-[6px] placeholder:text-gray-1 border-none text-gray-1;
