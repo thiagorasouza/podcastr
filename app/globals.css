@@ -44,6 +44,9 @@ body {
   .flex-center {
     @apply flex items-center justify-center;
   }
+  .text-10 {
+    @apply text-[10px] leading-normal;
+  }
   .text-12 {
     @apply text-[12px] leading-normal;
   }
@@ -114,11 +117,21 @@ body {
 }
 
 /* ======= clerk overrides ======== */
+.cl-socialButtons {
+  @apply flex flex-row justify-start !important;
+}
 .cl-socialButtonsIconButton {
-  border: 2px solid #222429;
+  @apply w-16 h-16;
+  border-width: 2px !important;
+  border-style: solid;
+  border-color: #222429;
 }
 .cl-button {
   color: white;
+}
+.cl-socialButtonsProviderIcon {
+  /* @apply p-1 w-full h-fit; */
+  @apply w-6 h-6;
 }
 .cl-socialButtonsProviderIcon__github {
   filter: invert(1);
@@ -128,16 +141,32 @@ body {
 }
 .cl-formButtonPrimary {
   background: #f97535;
+  text-transform: uppercase;
+  @apply text-10 py-3;
 }
 .cl-footerActionLink {
   color: #f97535;
 }
-.cl-headerSubtitle {
-  color: #c5d0e6;
+.cl-card {
+  @apply pt-16;
+}
+.cl-header {
+  align-items: flex-start;
+}
+.cl-headerTitle {
+  display: none;
+}
+
+.cl-logoBox {
+  height: auto;
+  justify-content: flex-start;
 }
 .cl-logoImage {
   width: 10rem;
   height: 3rem;
+}
+.cl-dividerRow {
+  display: none;
 }
 .cl-internal-4a7e9l {
   color: white;
