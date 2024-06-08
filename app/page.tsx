@@ -58,7 +58,7 @@ const Home = () => {
                   className="mb-2 w-full aspect-square object-cover rounded-md"
                 />
                 <h3 className="text-16 font-bold">{title}</h3>
-                <p className="text-12 capitalize">{description}</p>
+                <p className="text-12 capitalize ">{description}</p>
               </article>
             ))}
           </div>
